@@ -15,8 +15,8 @@
     "uploader"
   ],
   "success_url": "",
-  "website": "https://github.com/Tellybots",
-  "repository": "https://github.com/Tellybots",
+  "website": "https://github.com/arnobcoder12/Zee5-Bot",
+  "repository": "https://github.com/arnobcoder12/Zee5-Bot",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
