@@ -2,10 +2,10 @@ import os
 
 class Config(object):
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5152148642:AAFuZsIo6urDBVByCIQDHoFwEbYD5STsHYU")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    APP_ID = int(os.environ.get("APP_ID", 16151559))
+    API_HASH = os.environ.get("API_HASH", "1a43ce7c13c0fc46871f9220ff9778f0")
     # Get these values from my.telegram.org
     # Banned Unwanted Members..
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
@@ -29,13 +29,14 @@ class Config(object):
     # watermark file
     DEF_WATER_MARK_FILE = ""
     # your telegram id
-    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "756439645"))
     # Update channel for Force Subscribe
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
     # database session name, example: xurluploader
-    SESSION_NAME = os.environ.get("SESSION_NAME", "")
+    SESSION_NAME = os.environ.get("SESSION_NAME", "xurluploader")
     # database uri (mongodb)
-    DATABASE_URL = os.environ.get("DATABASE_URL", "")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "postgres://lcgvofqddigjrn:d89ee54807c63034d72b13c3fad9422399820d473233002531c21bfe6da01f3d@ec2-3-225-79-57.compute-1.amazonaws.com:5432/d5gan7cid74654
+")
     
     PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "0").split()))
     PRO_USERS.append(OWNER_ID)
